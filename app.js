@@ -1,8 +1,13 @@
 const express=require('express');
 const app=express();
+const {engine}=require('express-handlebars');
+
+app.engine('handlebars',engine({defaultLayout:'main'}));
+app.set('view engine','handlebars');
+app.set('views','./views');
 
 app.get('/',(req,res)=>{
-    res.send('express server is builded');
+    res.render('index');
 })
 
 app.listen(3000,()=>{
