@@ -2,6 +2,15 @@ header {
   overflow: hidden;
 }
 
+body,.navbar{
+  
+  background: linear-gradient(45deg, rgba(246,255,159,1) 0%, rgba(255,188,108,1) 70%, rgba(251,128,49,1) 100%);
+  background-size: 400%;
+  background-position: left;
+  animation: bg-animation 5s  infinite alternate;
+}
+
+
 .navbar .navbar-brand {
   color: #4592af;
 }
@@ -9,7 +18,10 @@ header {
 .navbar .navbar-brand:hover {
   color: #226089;
 }
-
+@keyframes bg-animation {
+  0%{background-position: left;}
+  100%{background-position:right}
+}
 .banner {
   position: relative;
   z-index: -1;
@@ -76,6 +88,11 @@ header {
   text-align: center;
   font-size: 3rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.keyword{
+  
+  font-weight:normal;
+  color: #666666;
 }
 
 @media screen and (max-width: 992px) {
