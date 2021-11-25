@@ -39,3 +39,12 @@ npm run start
 ```
 server run on http://localhost:3000
 ```
+7. 若要關閉伺服器,在terminal輸入
+
+
+ Mac 
+ > <kbd>control^</kbd>+<kbd>c</kbd>
+
+windows 
+
+> <kbd>Ctrl</kbd>+<kbd>c</kbd>
