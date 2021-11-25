@@ -64,9 +64,15 @@ body,.navbar{
 
 .card {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease-in;
+}
+.card:hover{
+  transform: scale(1.02);
+  
 }
 
 .card img{
+  padding-top: 1px ;
   height: 180px;
 }
 
@@ -95,6 +101,13 @@ body,.navbar{
   color: #666666;
 }
 
+.card:hover > .card-body > .badge >.star{
+  animation: spin 3s infinite;
+}
+@keyframes spin{
+  0%{transform: rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
 @media screen and (max-width: 992px) {
   
   .card img{

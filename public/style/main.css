@@ -97,9 +97,17 @@ body, .navbar {
 .card {
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .card img {
+  padding-top: 1px;
   height: 180px;
 }
 
@@ -126,6 +134,33 @@ body, .navbar {
 .keyword {
   font-weight: normal;
   color: #666666;
+}
+
+.card:hover > .card-body > .badge > .star {
+  -webkit-animation: spin 3s infinite;
+          animation: spin 3s infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 992px) {
