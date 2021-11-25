@@ -15,7 +15,8 @@ header {
   z-index: -1;
   margin: -5px;
   height: 360px;
-  background: #dddddd center center url('https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5720/restaurants-list-cover.jpg');
+  background: #dddddd center center
+    url("https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5720/restaurants-list-cover.jpg");
   background-size: cover;
   filter: blur(3px);
 }
@@ -67,10 +68,16 @@ header {
   font-size: 3rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+.description{
+  font-weight: 900;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  line-height: 2rem;
+  cursor: default;
+}
 
 @media screen and (max-width: 768px) {
   .restaurant-show-title {
     font-size: 2rem;
   }
 }
-

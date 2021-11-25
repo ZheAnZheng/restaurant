@@ -16,25 +16,31 @@ app.get("/", (req, res) => {
 });
 
 app.get("/restaurants/:id", (req, res) => {
-  const id=req.params.id;
-  const restaurant=restaurants.find(restaurant=>`${restaurant.id}`===id);
-  res.render('show',{restaurant})
+  const id = req.params.id;
+  const restaurant = restaurants.find(
+    (restaurant) => `${restaurant.id}` === id
+  );
+  res.render("show", { restaurant });
 });
 
-app.get('/search',(req,res)=>{
-    const keyword=req.query.keyword;
-    const matchItems=restaurants.filter(restaurant=>isIncludeName(restaurant.name,keyword) || isIncludeName(restaurant.category,keyword));
+app.get("/search", (req, res) => {
+  const keyword = req.query.keyword;
+  const matchItems = restaurants.filter(
+    (restaurant) =>
+      isIncludeName(restaurant.name, keyword) ||
+      isIncludeName(restaurant.category, keyword)
+  );
 
-    function isIncludeName(name,keyword){
-        if(name.toLowerCase().includes(keyword.toLowerCase())){
-            return true;
-        }else {
-            return false;
-        }
+  function isIncludeName(name, keyword) {
+    if (name.toLowerCase().includes(keyword.toLowerCase())) {
+      return true;
+    } else {
+      return false;
     }
-    
-    res.render('index',{restaurants:matchItems,keyword})
-})
+  }
+
+  res.render("index", { restaurants: matchItems, keyword });
+});
 
 app.listen(3000, () => {
   console.log("server run on http://localhost:3000");

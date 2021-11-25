@@ -2,14 +2,18 @@ header {
   overflow: hidden;
 }
 
-body,.navbar{
-  
-  background: linear-gradient(45deg, rgba(246,255,159,1) 0%, rgba(255,188,108,1) 70%, rgba(251,128,49,1) 100%);
+body,
+.navbar {
+  background: linear-gradient(
+    45deg,
+    rgba(246, 255, 159, 1) 0%,
+    rgba(255, 188, 108, 1) 70%,
+    rgba(251, 128, 49, 1) 100%
+  );
   background-size: 400%;
   background-position: left;
-  animation: bg-animation 5s  infinite alternate;
+  animation: bg-animation 5s infinite alternate;
 }
-
 
 .navbar .navbar-brand {
   color: #4592af;
@@ -19,15 +23,20 @@ body,.navbar{
   color: #226089;
 }
 @keyframes bg-animation {
-  0%{background-position: left;}
-  100%{background-position:right}
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 .banner {
   position: relative;
   z-index: -1;
   margin: -5px;
   height: 360px;
-  background: #dddddd center center url('https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5720/restaurants-list-cover.jpg');
+  background: #dddddd center center
+    url("https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5720/restaurants-list-cover.jpg");
   background-size: cover;
   filter: blur(3px);
 }
@@ -51,37 +60,32 @@ body,.navbar{
   color: #aaaaaa;
   font-size: 0.8rem;
 }
-.form-control:hover{
+.form-control:hover {
   border: grey 1px solid;
 }
-
-
 
 .btn-major {
   background-color: #9b4b4b;
   color: white;
 }
 
-
-
 .card {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.1s ease-in;
 }
-.card:hover{
+.card:hover {
   transform: scale(1.02);
-  
 }
 
-.card img{
-  padding-top: 1px ;
+.card img {
+  padding-top: 1px;
   height: 180px;
 }
 
-.card-title{
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .restaurant-category {
@@ -97,38 +101,36 @@ body,.navbar{
   font-size: 3rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.keyword{
-  
-  font-weight:normal;
+.keyword {
+  font-weight: normal;
   color: #666666;
 }
 
-.card:hover > .card-body > .badge >.star{
+.card:hover > .card-body > .badge > .star {
   animation: spin 3s infinite;
 }
-@keyframes spin{
-  0%{transform: rotate(0deg);}
-  100%{transform:rotate(360deg);}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media screen and (max-width: 992px) {
-  
-  .card img{
+  .card img {
     height: 115px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  
   .restaurant-show-title {
     font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 575px) {
-  
-  .card img{
+  .card img {
     height: auto;
   }
-  
 }
-

@@ -2,12 +2,13 @@ header {
   overflow: hidden;
 }
 
-body, .navbar {
+body,
+.navbar {
   background: linear-gradient(45deg, #f6ff9f 0%, #ffbc6c 70%, #fb8031 100%);
   background-size: 400%;
   background-position: left;
-  -webkit-animation: bg-animation 5s  infinite alternate;
-          animation: bg-animation 5s  infinite alternate;
+  -webkit-animation: bg-animation 5s infinite alternate;
+          animation: bg-animation 5s infinite alternate;
 }
 
 .navbar .navbar-brand {
@@ -266,6 +267,14 @@ header {
   text-align: center;
   font-size: 3rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  font-weight: 900;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  line-height: 2rem;
+  cursor: default;
 }
 
 @media screen and (max-width: 768px) {
