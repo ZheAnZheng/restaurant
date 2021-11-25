@@ -9,6 +9,7 @@ body,
   background-position: left;
   -webkit-animation: bg-animation 5s infinite alternate;
           animation: bg-animation 5s infinite alternate;
+  overflow: auto;
 }
 
 .navbar .navbar-brand {

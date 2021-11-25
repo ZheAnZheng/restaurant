@@ -13,7 +13,9 @@ body,
   background-size: 400%;
   background-position: left;
   animation: bg-animation 5s infinite alternate;
+  overflow: auto;
 }
+
 
 .navbar .navbar-brand {
   color: #4592af;
