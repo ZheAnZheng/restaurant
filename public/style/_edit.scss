@@ -1,0 +1,46 @@
+.form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    width: 50%;
+    height: 70%;
+    margin:auto;
+    transform: translateY(-25%);
+    border: 1px solid rgb(161, 159, 159);
+    background-color: whitesmoke;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.315);
+    
+    button{
+        width: 30%;
+        border: none;
+        border:1px solid rgb(231, 158, 48);
+        background:rgb(241, 158, 49);
+        border-radius: 7px;
+        color: whitesmoke;
+    }
+}
+
+.input-group{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    input{
+        flex:0 0 85%;
+       
+    }
+    textarea{
+        flex:0 0 85%;
+    }
+    label{
+        flex:1 0 0;
+        text-align: center;
+        
+        margin:unset;
+    }
+}

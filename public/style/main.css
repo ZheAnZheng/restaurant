@@ -301,4 +301,74 @@ header {
     font-size: 2rem;
   }
 }
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  width: 50%;
+  height: 70%;
+  margin: auto;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  border: 1px solid #a19f9f;
+  background-color: whitesmoke;
+  border-radius: 7px;
+  -webkit-box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.315);
+          box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.315);
+}
+
+.form button {
+  width: 30%;
+  border: none;
+  border: 1px solid #e79e30;
+  background: #f19e31;
+  border-radius: 7px;
+  color: whitesmoke;
+}
+
+.input-group {
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-group input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 85%;
+          flex: 0 0 85%;
+}
+
+.input-group textarea {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 85%;
+          flex: 0 0 85%;
+}
+
+.input-group label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  text-align: center;
+  margin: unset;
+}
 /*# sourceMappingURL=main.css.map */
