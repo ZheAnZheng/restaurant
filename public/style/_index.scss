@@ -31,7 +31,9 @@ body,
   background-color: #dddddd;
   box-shadow: inset 0 0 2px rgba(8, 8, 8, 0.185);
 }
-
+form{
+  margin:0;
+}
 
 .navbar .navbar-brand {
   color: #4592af;
@@ -48,6 +50,7 @@ body,
     background-position: right;
   }
 }
+
 .banner {
   position: relative;
   z-index: -1;
@@ -92,7 +95,7 @@ body,
   transition: all 0.1s ease-in;
 }
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 .card img {
@@ -124,7 +127,8 @@ body,
   color: #666666;
 }
 
-.card:hover > .card-body > .badge > .star {
+.card:hover > .card-body span .star {
+  
   animation: spin 3s infinite;
 }
 @keyframes spin {
